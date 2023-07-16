@@ -1,0 +1,45 @@
+{
+  "name": "ecmascript",
+  "version": "1.0.0",
+  "description": "Explorando las ventajas de ECMAScript frente a JavaScript clásico.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jcomte23/ECMA-Script.git"
+  },
+  "keywords": [
+    "ECMAScript",
+    "JavaScript",
+    "Ventajas",
+    "Comparación",
+    "Modernización",
+    "Sintaxis",
+    "Funciones",
+    "de",
+    "flecha",
+    "Promesas",
+    "Módulos",
+    "Actualizaciones",
+    "Mejoras",
+    "Estándar",
+    "Compatibilidad",
+    "Rendimiento",
+    "Mantenibilidad",
+    "Eficiencia",
+    "Desarrollo",
+    "web",
+    "Programación",
+    "Características",
+    "Código",
+    "limpio"
+  ],
+  "author": "Javier Cómbita Téllez <jcomte23@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jcomte23/ECMA-Script/issues"
+  },
+  "homepage": "https://github.com/jcomte23/ECMA-Script#readme"
+}
