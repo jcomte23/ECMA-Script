@@ -41,5 +41,6 @@
   "bugs": {
     "url": "https://github.com/jcomte23/ECMA-Script/issues"
   },
-  "homepage": "https://github.com/jcomte23/ECMA-Script#readme"
+  "homepage": "https://github.com/jcomte23/ECMA-Script#readme",
+  "type": "module"
 }
