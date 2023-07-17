@@ -4,18 +4,45 @@
 |--------------------------------------------------------------------------
 */
 
-function sum() {
-    var numbers = Array.prototype.slice.call(arguments);
-    var total = 0;
+var person = {
+    nombre: "marcus",
+    edad: 15
+};
 
-    for (var i = 0; i < numbers.length; i++) {
-        total += numbers[i];
+var ubicacion = {
+    ciudad: "antioquia",
+    direccion: "medellin"
+};
+
+var mergedObject = {};
+
+// Copiar las propiedades del objeto "person"
+for (var key in person) {
+    if (person.hasOwnProperty(key)) {
+        mergedObject[key] = person[key];
     }
-
-    return total;
 }
 
-console.log(sum(1, 2, 3, 4)); // 10
+// Copiar las propiedades del objeto "direccion"
+for (var key in ubicacion) {
+    if (ubicacion.hasOwnProperty(key)) {
+        mergedObject[key] = ubicacion[key];
+    }
+}
+
+// Agregar información adicional
+mergedObject.extra = "Información adicional";
+
+console.log(mergedObject);
+/*
+{
+  nombre: "marcus",
+  edad: 15,
+  ciudad: "medellin",
+  direccion: "medellin",
+  extra: "Información adicional"
+}
+*/
 
 /*
 |--------------------------------------------------------------------------
@@ -23,15 +50,25 @@ console.log(sum(1, 2, 3, 4)); // 10
 |--------------------------------------------------------------------------
 */
 
-function sum() {
-    var numbers = Array.prototype.slice.call(arguments);
-    var total = 0;
+var person = {
+    nombre: "marcus",
+    edad: 15
+};
 
-    for (var i = 0; i < numbers.length; i++) {
-        total += numbers[i];
-    }
+var ubicacion = {
+    ciudad: "antioquia",
+    direccion: "medellin"
+};
 
-    return total;
+var mergedObject = { ...person, ...ubicacion, ...{ extra: "Información adicional" } };
+
+console.log(mergedObject);
+/*
+{
+  nombre: "marcus",
+  edad: 15,
+  ciudad: "medellin",
+  direccion: "medellin",
+  extra: "Información adicional"
 }
-
-console.log(sum(1, 2, 3, 4)); // 10
+*/
