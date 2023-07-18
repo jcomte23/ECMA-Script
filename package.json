@@ -42,5 +42,8 @@
     "url": "https://github.com/jcomte23/ECMA-Script/issues"
   },
   "homepage": "https://github.com/jcomte23/ECMA-Script#readme",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "node-fetch": "^3.3.1"
+  }
 }
